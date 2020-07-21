@@ -22,7 +22,7 @@ localStorage.setItem('products', JSON.stringify(products))
 
 class App extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
     this.state = {
       products: JSON.parse(localStorage.getItem('products'))
@@ -45,7 +45,7 @@ class App extends Component {
   }
 
   onDelete(id) {
-    const products = this.getProducts();
+    const products = this.getProducts()
 
     const filteredProducts = products.filter(product => {
       return product.id !== id
